@@ -1,0 +1,13 @@
+<div align="center" class="container"><h2>Останні новини</h2></div>
+
+<div class="container">
+  <ul>
+    <li *ngFor="let a of news">
+      <h3>
+        <a>{{ a?.header }}</a>
+      </h3>
+      <p>{{ a?.text }}</p>
+      <p>{{ a?.date }}</p>
+    </li>
+  </ul>
+</div>
